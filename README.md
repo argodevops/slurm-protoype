@@ -1,6 +1,6 @@
 # README #
 
-Demonstratable Slurm prototype. See https://deepskyblue.atlassian.net/wiki/spaces/RDEC/pages/1110474765/SLURM+Prototype for design.
+Demonstratable Slurm prototype. 
 
 ### What is this repository for? ###
 
@@ -10,8 +10,6 @@ All source code for demonstratable set of applications for submitting jobs to Sl
 * A job response service (spring boot app) to handle the response
 
 ### How do I get set up? ###
-
-For the Slurm build and install guide see the notes at https://deepskyblue.atlassian.net/wiki/spaces/RDEC/pages/1113554945/Set+up+Slurm 
 
 The mockHpc and response app will build into a docker image.
 
@@ -28,7 +26,7 @@ Run the slurm-mockHpc container which has the Slurm daemons and mockHpc app inst
 
 * docker run -d slurm-mockHpc
 
-If you exec (docker exec -it slurm-mockHpc /bin/bash) into the container and run sinfo command it should show the Slurm daemons running. See https://deepskyblue.atlassian.net/wiki/spaces/RDEC/pages/1119256577/Run+a+Slurm+compute+job.
+If you exec (docker exec -it slurm-mockHpc /bin/bash) into the container and run sinfo command it should show the Slurm daemons running.
 
 Run the job response app. By default it will expose port 8080. It exposes an endpoint (http://<url>:<port>/job/postJob) which simply logs any received HTTP POST requests.
 
@@ -49,6 +47,3 @@ java -jar target/slurm-job-response-service.jar
 * Pipeline successfully builds
 * Build and deploy
 
-### Who do I talk to? ###
-
-* Repo owner or RDEC team 
