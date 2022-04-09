@@ -1,0 +1,18 @@
+version: "3"
+services:
+  slurm-job-response-service:
+    build: slurm-job-response-service/
+    ports:
+      - "8050:8080"
+  slurm-job-submission-service:
+    build: slurm-job-submission-service/
+    ports:
+      - "8051:8080"
+  slurm-mockhpc:
+    build: mockHpc/
+    hostname: ernie
+    stdin_open: true
+    tty: true
+
+
+

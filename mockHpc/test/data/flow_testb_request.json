@@ -1,0 +1,17 @@
+{
+  "request": {
+    "run_duration": "2",
+    "process": {
+      "name": "TESTB",
+      "logic": {
+         "status": "FAILED",
+         "payload": "Overridden processing status to failed"
+      }
+    },
+    "response": {
+      "return_url": "http://jsfiddle.net/echo/json/",
+      "status": "COMPLETED",
+      "payload": "Processing successfully completed"
+    }
+  }
+}
